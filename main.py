@@ -14,17 +14,17 @@ def main():
 
     color_list =[]
 
-    print('colors = \\')
+    print('colors = \\\n[')
     for color in colors:
-        print(f"{{\n    'red':' {color.rgb.r}")
-        print(f"    'green': {color.rgb.g}")
-        print(f"    'blue': {color.rgb.b}")
-        print(f"    'tuple': ({color.rgb.r}, {color.rgb.g}, {color.rgb.b})")
-        print(f"    'proportion': {color.proportion * 100:0.2f}%\n}}")
+        print(f"    {{\n        'red':' {color.rgb.r}")
+        print(f"        'green': {color.rgb.g}")
+        print(f"        'blue': {color.rgb.b}")
+        print(f"        'tuple': ({color.rgb.r}, {color.rgb.g}, {color.rgb.b})")
+        print(f"        'proportion': {color.proportion * 100:0.2f}%\n    }}")
 
         color_list += (color.rgb.r, color.rgb.g, color.rgb.b),
 
-    print(f"\ntuple_list = {color_list}")
+    print(f"]\ntuple_list = {color_list}")
 
 if __name__ == '__main__':
     main()
